@@ -1,0 +1,11 @@
+This repository contains my code solutions for several challenges from CodeWars.com website.
+
+With time, I will be adding more code, both based on coding challenges and on other projects. There are two separate
+folders in this repository. One of them contains the whole NetBeans project, the other one contains java files. The
+code in both folders is exactly the same.
+
+Each challenge is preceded by a title, a short description and a link to its original source page at CodeWars.com.
+Some of the solutions are presented as static methods and can be found in the CodingChallenges class. For two of the
+challenges, 'Group Checker' and 'Vasya Clerk', I have decided to write separate classes.
+
+For each solution there is a dedicated test class, written using JUnit library.
