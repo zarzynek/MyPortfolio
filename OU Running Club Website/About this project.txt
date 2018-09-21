@@ -7,5 +7,3 @@ that would use the POST method to send the input from the form to the server hos
 
 I have created that project using the tutorials and databases available on w3schools.com .
 
-Please ignore the poor aesthetics of the ‘Mailing’ subpage. The main purpose of this project was to use multiple
-HTML and CSS elements, the ‘look and feel’ aspect of the design was not marked.  
