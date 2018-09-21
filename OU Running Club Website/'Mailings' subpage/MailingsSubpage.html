@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>News Items: SubPage</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<link href="styles_ourc.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+	<div id="subpage" style='margin-left: 50px;'>
+		<!-- The 'form' elements start here. It contains of the main textarea (for mail), smaller text area (for date) and two buttons-->
+		<form action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" method="post" target="_blank" name="mailForm">
+		<input type="hidden" name="sessionID" value="ADCDEF01-AABB-CCDD-EEFF-ABCDEF012345" />
+		<h3>New Mail</h3>
+		<textarea id="textfield" title="New Mail" name="mail" rows="20" cols="75"></textarea>
+		<br/>
+		<table id="newstable" style='width: 280px; margin-top: 20px;'>
+			<tr>
+				<td>
+					<b>To be sent by:</b>
+				</td>
+				<td>
+					<input class="tableinput" type="text" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button class="buttons"><h3>Attach File</h3></button>
+				</td>
+				<td>
+					<input class="buttons" style='font-size: 17px; font-weight: bold;' type="submit" value="Send Mail" name="message"/>
+				</td>
+			</tr>
+		</table>
+		</form>
+		<!--End of the 'form' element -->
+	</div>
+	</body>
+
+</html>

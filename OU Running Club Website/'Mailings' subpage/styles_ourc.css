@@ -1,0 +1,249 @@
+/* CSS for the main frame */
+
+body
+{
+	background-color: #717171;
+	font-family: "Century Gothic", Verdana, sans-serif;
+	color: #F1F1F1;
+	background-image: url(images/runners.jpg) /*image downloaded from: 'https://pixabay.com/pl/biegacze-silhouettes-zawodnicy-752493/' and is under CCO Public Domain license */
+}
+
+#container
+{
+	width: 1082px;
+	height: 582px;
+	margin: auto;
+	padding: 20px 30px 20px 30px;
+	background-color: #151515;
+}
+
+#banner
+{
+	width: 1078px;
+	height: 78px;
+	margin-left: auto;
+	margin-right:auto;
+	background-image: url(images/containerBack.jpg);
+}
+
+#title
+{
+	margin: 10px;
+	width: 556px;
+	height: 36px;
+	float: left;
+	text-align:center;
+	font-size: 24px;
+	padding: 10px;
+	background-color: #1d307c;
+	box-shadow: 10px 10px 5px   #141e48;
+}
+
+#logo
+{
+	margin: 10px 10px 10px 0;
+	height: 56px;
+	width: 466px;
+	float: left;
+	background-color: #1d307c;
+	box-shadow: 10px 10px 5px   #141e48;
+}
+
+#image
+{
+	margin-left: 5px;
+	float: left;
+	width: 120px;
+}
+
+#motto
+{
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 40%;
+	background-color: #1d307c;
+}
+
+#search
+{
+	height: 20px;
+	margin: 14px 0px 6px 0px;
+	float: right;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#nav
+{
+	clear: both;
+	float: left;
+	width: 198px;
+	height: 418px;
+	margin: 0px 10px 20px 0px;
+	background-image: url(images/containerBack.jpg);
+}
+
+.button
+{
+	margin: 10px;
+	height: 26px;
+	font-size: 16px;
+	padding: 15px;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #4668b3;
+	box-shadow: 5px 5px 2px  #3a4880;
+	border-radius: 15px;
+	color: #F1F1F1;
+	display: block;
+	font-weight: bold;
+}
+
+#thisbutton
+{
+	margin: 10px;
+	height: 26px;
+	font-size: 16px;
+	padding: 15px;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #1d307c;
+	box-shadow: 5px 5px 2px   #141e48;
+	border-radius: 15px;
+	font-weight: bold;
+}
+
+.button:hover
+{
+	background-color: #3095d3;
+	box-shadow: 5px 5px 2px  #6a7dc6;
+}
+
+#screen
+{
+	float: right;
+	width: 808px;
+	height: 388px;
+	margin: 10px 15px 20px 0px;
+	border-style: ridge;
+	border-width: 7px;
+	border-color: gray;
+}
+
+#footer
+{
+	clear: both;
+	width: 1063px;
+	height: 18px;
+	border-style: dashed;
+	border-width: 1px;
+	font-size: 11px;
+	padding-left: 15px;
+	background-image: url(images/containerBack.jpg);
+	font-weight: bold;
+}
+
+/*CSS for subpages */
+
+#subpage
+{
+	width: 750px;
+	padding: 15px;
+}
+
+#form
+{
+	margin-left: 133px;
+}
+
+#raceTable
+{
+	border: solid 1px;
+	padding: 2px;
+	width: 500px;
+	margin: auto;
+	text-align: center;
+}
+
+#raceTable th
+{
+	border: solid 1px;
+	padding: 3px;
+	
+}
+
+#raceTable td
+{
+	border: solid 1px;
+	padding: 3px;
+}
+
+#dividedsubpage
+{
+	width: 550px;
+	margin: auto;
+}
+
+#dividedsubpage th
+{
+	border: 1px dashed;
+}
+
+#dividedsubpage td
+{
+	padding: 6px;
+}
+
+.middleborder
+{
+	border-right: 1px dashed;
+}
+
+.tableinput
+{
+	float: right;
+}
+
+.buttons
+{
+	margin: 10px;
+	float: right;
+	min-width: 130px;
+	min-height: 80px;
+	border-style: solid;
+	border-color: white;
+	background-color: black;
+	color: white;
+}
+
+.buttons:hover
+{
+	border-color: #f7dc6f;
+	color: #f7dc6f;
+}
+
+#textfield
+{
+	margin: auto;
+	width: 600px;
+	height:270px;
+	border-style: ridge;
+	border-width: 7px;
+}
+
+#newstable
+{
+	position: relative;
+	left: 290px;
+}
+
+output
+{
+	border: 1px solid;
+}
+
+a 
+{
+	text-decoration: none;
+	color: black;
+}

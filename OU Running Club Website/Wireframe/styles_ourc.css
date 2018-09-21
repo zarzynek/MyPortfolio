@@ -1,0 +1,229 @@
+
+
+#container
+{
+	width: 1082px;
+	height: 582px;
+	margin: auto;
+	padding: 20px 30px 20px 30px;
+	border-style: solid;
+	border-width: 1px;
+	font-family: "Century Gothic", Verdana, sans-serif;
+	background-color: #E6E6E6;
+}
+
+#banner
+{
+	width: 1078px;
+	height: 78px;
+	margin-left: auto;
+	margin-right:auto;
+	border-style: solid;
+	border-width: 1px;
+	background-color: #FFFFFF;
+}
+
+#title
+{
+	margin: 10px;
+	width: 606px;
+	height: 36px;
+	float: left;
+	border-style: solid;
+	border-width: 1px;
+	text-align:center;
+	font-size: 24px;
+	padding: 10px;
+	background-color: #FFFFFF;
+}
+
+#logo
+{
+	margin: 10px;
+	height: 56px;
+	width: 406px;
+	float: left;
+	border-style: solid;
+	border-width: 1px;
+	background-color: #FFFFFF;
+}
+
+#image
+{
+	margin-left: 10px;
+	float: left;
+	width: 120px;
+}
+
+#motto
+{
+	font-size: 13px;
+	line-height: 20%;
+	background-color: #FFFFFF;
+}
+
+#search
+{
+	height: 20px;
+	margin: 10px 0px 10px 0px;
+	float: right;
+	font-size: 13px;
+}
+
+#nav
+{
+	clear: both;
+	float: left;
+	width: 198px;
+	height: 418px;
+	border-style: solid;
+	border-width: 1px;
+	margin: 0px 10px 20px 0px;
+	background-color: #FFFFFF;
+}
+
+.button
+{
+	margin: 10px;
+	height: 26px;
+	border-style: solid;
+	border-width: 1px;
+	font-size: 16px;
+	padding: 15px;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #FFFFFF;
+}
+
+#thisbutton
+{
+	margin: 10px;
+	height: 26px;
+	border-style: solid;
+	border-width: 1px;
+	font-size: 16px;
+	padding: 15px;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #464646;
+}
+
+.button:hover
+{
+	background-color: #E5E5E5;
+}
+
+#screen
+{
+	float: right;
+	width: 808px;
+	height: 388px;
+	border-style: solid;
+	border-width: 1px;
+	margin: 0px 0px 20px 10px;
+	padding: 15px;
+	background-color: #FFFFFF;
+}
+
+#footer
+{
+	clear: both;
+	width: 1063px;
+	height: 18px;
+	border-style: dashed;
+	border-width: 1px;
+	font-size: 11px;
+	padding-left: 15px;
+	background-color: #FFFFFF;
+}
+
+// CSS for subpages
+
+#subpage
+{
+	width: 750px;
+	padding: 15px;
+}
+
+#form
+{
+	margin-left: 133px;
+}
+
+#raceTable
+{
+	border: solid 1px;
+	padding: 2px;
+	width: 500px;
+	margin: auto;
+	text-align: center;
+}
+
+#raceTable th
+{
+	border: solid 1px;
+	padding: 3px;
+	
+}
+
+#raceTable td
+{
+	border: solid 1px;
+	padding: 3px;
+}
+
+#dividedsubpage
+{
+	width: 550px;
+	margin: auto;
+}
+
+#dividedsubpage th
+{
+	border: 1px dashed;
+}
+
+#dividedsubpage td
+{
+	padding: 6px;
+}
+
+.middleborder
+{
+	border-right: 1px dashed;
+}
+
+.tableinput
+{
+	float: right;
+}
+
+.buttons
+{
+	float: right;
+	width: 130px;
+}
+
+#textfield
+{
+	margin: auto;
+	width: 600px;
+	height:270px;
+}
+
+#newstable
+{
+	position: relative;
+	left: 290px;
+}
+
+output
+{
+	border: 1px solid;
+}
+
+a 
+{
+	text-decoration: none;
+	color: black;
+}

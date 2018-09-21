@@ -1,0 +1,11 @@
+About this project
+
+The files in this folder present part of my final project for the ‘Web, mobile and cloud technologies’ module.
+I was asked to design and create a wireframe for a new ‘The Open University Running Club’ website, and then
+to create the ‘Mailings’ subpage based on that wireframe. The subpage had to include the html <form> element,
+that would use the POST method to send the input from the form to the server hosted by the university.
+
+I have created that project using the tutorials and databases available on w3schools.com .
+
+Please ignore the poor aesthetics of the ‘Mailing’ subpage. The main purpose of this project was to use multiple
+HTML and CSS elements, the ‘look and feel’ aspect of the design was not marked.  
