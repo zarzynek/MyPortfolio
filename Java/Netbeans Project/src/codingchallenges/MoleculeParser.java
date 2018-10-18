@@ -1,4 +1,7 @@
 /*
+Molecule to atoms
+https://www.codewars.com/kata/molecule-to-atoms/train/java
+
 For a given chemical formula represented by a string, count the number of atoms
 of each element contained in the molecule and return an object (associative
 array in PHP, Dictionary<string, int> in C#, Map in Java).
@@ -333,10 +336,10 @@ public class MoleculeParser
         StringBuilder currentElement = new StringBuilder("");
         char currentChar = '0';
 
-        //Code for the first character of the formula
+        //Code for handling the first character of the formula
         currentElement.append(formula.charAt(0));
         
-        //Code for all the following characters of the formula
+        //Code for handling all the following characters of the formula
         for (int i = 1; i < formula.length(); i++)
         {
             currentChar = formula.charAt(i);
@@ -344,8 +347,11 @@ public class MoleculeParser
             if (Character.isUpperCase(currentChar))
             {
                 result = addElement(result, currentElement, currentMultiplier);
-
-                //Resets the currentElement and starts over
+                /*
+                As the 'currentElement' is added to the 'result' Map,
+                the 'currentMultiplier' and 'currentElement' varaibles are being
+                reset.
+                */
                 currentMultiplier = 1;
                 currentElement.delete(0, currentElement.length());
                 currentElement.append(currentChar);
@@ -358,7 +364,6 @@ public class MoleculeParser
             {
                 currentMultiplier = extractMultiplier(formula.substring(i));
                 i += Integer.toString(currentMultiplier).length() - 1;
-
             }
             else
             {
@@ -417,61 +422,22 @@ public class MoleculeParser
     }
 
     /**
-     * If the first character of the  part of the formula is a digit,
-     * extracts any number represented by the initial characters. If the first
-     * character is not a digit, the method returns 1.
+     * Takes a string and expands brackets in that string that were indicated by
+     * the <code>currentMarker</code> instance variable. If the brackets are
+     * followed by a multiplier, the value of the multiplier is extracted. If a 
+     * multiplier is not present, its value is set to 1. <br/>
+     * The formula inside the brackets is then repeated <code>n</code> times,
+     * where <code>n</code> is equal to the value of the multiplier. Finally,
+     * the brackets are removed and position of the <code>currentMarker</code> 
+     * adjusted.
      *
-     * @param subFormula        a part of the given formula, that potentially
-     *                          starts with a multiplier
-     * @return                  '1' if the <code>subFormula</code> does not
-     *                          start with characters representing digits,
-     *                          the value represented by the first characters
-     *                          otherwise
-     */
-    private int extractMultiplier(String subFormula)
-    {
-        if (subFormula.length() == 0 || !Character.isDigit(subFormula.charAt(0)))
-        {
-            return 1;
-        }
-
-        int iterator = 0;
-        while (iterator < subFormula.length()
-                && Character.isDigit(subFormula.charAt(iterator)))
-        {
-            iterator++;
-        }
-        return Integer.parseInt(subFormula.substring(0, iterator));
-    }
-
-    /**
-     * Takes a string and an integer and returns a string representing the
-     * result of repeating that string n times.
-     *
-     * @param innerFormula
-     * @param multiplier
-     * @return
-     */
-    private String multiplyInnerFormula(String innerFormula,
-            int multiplier)
-    {
-        String result = "";
-        for (int i = 0; i < multiplier; i++)
-        {
-            result += innerFormula;
-        }
-        return result;
-    }
-
-    /**
-     * Takes a string and expands any brackets in that string by repeating the
-     * formulas inside any brackets by the values of the corresponding
-     * multipliers
-     *
-     * @param initialFormula
-     * @param openingBracket
-     * @param closingBracket
-     * @return
+     * @param initialFormula        a String representing a chemical formula
+     * @param openingBracket        an int representing the index of the
+     *                              opening bracket
+     * @param closingBracket        an int representing the index of the
+     *                              closing bracket
+     * @return                      the <code>initialFormula</code> with the
+     *                              indicated brackets being expanded
      */
     private StringBuilder expandCurrentBrackets(
             StringBuilder initialFormula,
@@ -507,6 +473,59 @@ public class MoleculeParser
                     multiplier).length();
         }
 
+        return result;
+    }
+    
+    /**
+     * Helper method for expandCurrentBrackets(StringBuilder, int, int) method.
+     * If the first character of the  part of the formula is a digit,
+     * extracts any number represented by the first and the following characters.
+     * If the first character is not a digit, the method returns 1.
+     *
+     * @param subFormula        a part of the given formula, that potentially
+     *                          starts with a multiplier
+     * @return                  '1' if the <code>subFormula</code> does not
+     *                          start with characters representing digits,
+     *                          the value represented by the first characters
+     *                          otherwise
+     */
+    private int extractMultiplier(String subFormula)
+    {
+        if (subFormula.length() == 0 || !Character.isDigit(subFormula.charAt(0)))
+        {
+            return 1;
+        }
+
+        int iterator = 0;
+        while (iterator < subFormula.length()
+                && Character.isDigit(subFormula.charAt(iterator)))
+        {
+            iterator++;
+        }
+        return Integer.parseInt(subFormula.substring(0, iterator));
+    }
+    
+     /**
+     * Helper method for expandCurrentBrackets(StringBuilder, int, int) method.
+     * Takes a string and an integer and returns a string representing the
+     * result of repeating the initial string n times, where n is equal to the
+     * passed integer.
+     *
+     * @param innerFormula          a string to be repeated
+     * @param multiplier            an integer indicating how many times the
+     *                              <code>innerFormula</code> is to be repeated
+     * @return                      a string representing the result of
+     *                              repeating the <code>innerFormula</code>
+     *                              <code>multiplier</code> times
+     */
+    private String multiplyInnerFormula(String innerFormula,
+            int multiplier)
+    {
+        String result = "";
+        for (int i = 0; i < multiplier; i++)
+        {
+            result += innerFormula;
+        }
         return result;
     }
 
